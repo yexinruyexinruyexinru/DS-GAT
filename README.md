@@ -1,3 +1,28 @@
+## Download datasets
++ DBLP
++ Tmall
++ Patent
+  
+All dataset can be found at [Dropbox](https://www.dropbox.com/sh/palzyh5box1uc1v/AACSLHB7PChT-ruN-rksZTCYa?dl=0). 
+You can download the datasets and put them in the folder `data/`, e.g., `data/dblp`.
+
+# Requirements
+
+```
+tqdm==4.59.0
+scipy==1.10.1
+texttable==1.6.2
+torch==1.12.0+cu116
+numpy==1.23.5
+numba==0.56.4
+scikit_learn==1.0
+```
+A specific package version is provided here, but other compatible versions can also reproduce the results of the paper. You may configure the setup according to your specific requirements.
+
+## Build neighborhood sampler
+```bash
+python setup.py install
+```
 ## Run DS-GAT
 
 ```bash
